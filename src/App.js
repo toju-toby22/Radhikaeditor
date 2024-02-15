@@ -19,6 +19,7 @@ import Financeblogpage from './Financeblogpage.';
 import Financeedit from './Financeedit';
 import CareerblogEdit from './CareerblogEdit';
 import CareerblogPage from './CareerblogPage';
+import HomePage from './HomePage';
 
 
 function App() {
@@ -38,13 +39,15 @@ function App() {
     <ul className="pagelinks">
         <Link className='link' to = "/FinanceArticles"><li>Finance & Real Estate</li></Link>
         <Link className='link' to = "/CareerArticleeditor"><li>Career</li></Link>
-        <Link className='link' to = "/"><li>Personal Development</li></Link>
+        <Link className='link' to = "/CreateBlog"><li>Personal Development</li></Link>
         
     </ul>
 </div>
 
       <Routes>
-        <Route path="/" element={<CreateBlog />} />
+        
+        <Route path="/" element={<HomePage />} />
+        <Route path="/CreateBlog" element={<CreateBlog />} />
         <Route exact path="/bloglistview" element={<BlogslistView />} />
         <Route path="/show/:id" element={<BlogView />} />Financeblogpage
         <Route path="/Financeblogpage/:id" element={<Financeblogpage />} />
