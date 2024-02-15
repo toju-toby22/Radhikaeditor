@@ -1,4 +1,80 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+body, html {
+    font-family: 'Roboto', sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+ul{
+  list-style: none;
+}
+
+body{
+  background-color: #e9e6e646;
+}
+
+.Link{
+  text-decoration: none;
+  color: black;
+}
+
+.container{
+  margin: 30px;
+  background-color: rgb(228, 228, 228);
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.title{
+  margin: 5px;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  width: 70vh;
+}
+button{
+  background-color: rgba(42, 66, 96, 0.533);
+  font-size: 20px;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.post{
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+.post > p{
+  font-size: 20px;
+}
+.blog{
+  margin: 50px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* padding: 30px; */
+
+}
+
+@media screen and (max-width: 576px)  {
+  .blog{
+      margin: 5px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  
+  }
+}
+button:hover{
+  background-color: rgba(100, 103, 106, 0.533);
+
+}
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +111,7 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
+
+
+
